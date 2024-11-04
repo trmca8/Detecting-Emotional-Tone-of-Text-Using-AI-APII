@@ -22,11 +22,11 @@ Installation
 
   2. Set up the environment variable:
 
-     3.1 Get Your Sapling API Key: Sign up on Sapling AI's website and get your API key for the tone detection API.
+     2.1 Get Your Sapling API Key: Sign up on Sapling AI's website and get your API key for the tone detection API.
 
-     3.2 Create a .env file in the project root directory and add your Sapling AI API key.
+     2.2 Create a .env file in the project root directory and add your Sapling AI API key.
      
-     3.3 Open .env and add: REACT_APP_API_KEY="your_sapling_ai_api_key"
+     2.3 Open .env and add: REACT_APP_API_KEY="your_sapling_ai_api_key"
      
      - Note: Replace your_sapling_ai_api_key with your actual API key from Sapling AI.
 
