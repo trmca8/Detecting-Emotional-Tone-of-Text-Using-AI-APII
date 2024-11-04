@@ -1,70 +1,88 @@
-# Getting Started with Create React App
+# Detecting-Emotional-Tone-of-Text-Using-AI-API
+Detecting Emotional Tone of Text Using AI API in React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a simple React application that detects the emotional tone of a given text using the Sapling AI API. It provides users with an intuitive UI to input text, analyze its emotional tone, and display the results with probability scores.
 
-## Available Scripts
+Features
+  - Detects emotional tone (positive, negative, neutral) of user-provided text.
+  - Smooth transition animations for the result display.
 
-In the project directory, you can run:
+Tech Stack
+  - React for the front-end UI
+  - Sapling AI API for emotional tone analysis
+  - Axios for making API requests
 
-### `npm start`
+Getting Started
+  - Follow these steps to set up and run the project locally.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Installation
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+  1. Clone the repository:
+     
+    - git clone https://github.com/trmca8/Detecting-Emotional-Tone-of-Text-Using-AI-API.git
+     
+    - cd emotional-tone-detector
 
-### `npm test`
+  2. Install the dependencies:
+     - npm install axios
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+  3. Set up the environment variable:
 
-### `npm run build`
+     3.1 Get Your Sapling API Key: Sign up on Sapling AI's website and get your API key for the tone detection API.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+     3.2 Create a .env file in the project root directory and add your Sapling AI API key.
+     
+     3.3 Open .env and add: REACT_APP_API_KEY="your_sapling_ai_api_key"
+     
+     - Note: Replace your_sapling_ai_api_key with your actual API key from Sapling AI.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+To start the application, run:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    - npm start
+    
+    - This will start the application on http://localhost:3000.
 
-### `npm run eject`
+Usage:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+  1. Enter the text you want to analyze in the text area.
+     
+  2. Click the Check button.
+     
+  - The application will display the detected emotional tone along with a probability score.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+How It Works:
+  1. Text Input: Users enter text in the provided text area.
+  2. API Request: When the user clicks the "Check" button, the app sends a POST request to the Sapling AI API with the text data and API key.
+  3. Result Display: The response contains the emotional tone and a probability score, which the app displays to the user.
+  4. Transition Effects: CSS animations provide a smooth transition effect each time a new result is displayed.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Dependencies:
+  - React
+  - Axios
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Bash Commands Recap:
+  # Clone repository
+    - git clone https://github.com/trmca8/Detecting-Emotional-Tone-of-Text-Using-AI-API.git
+    - cd emotional-tone-detector
 
-## Learn More
+  # Install dependencies
+    - npm install axios
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+  # Create .env file
+    - echo "REACT_APP_API_KEY=your_sapling_ai_api_key" > .env
+    - Reminder: Make sure to replace your_sapling_ai_api_key with your actual Sapling API     key.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+  # Start the app
+    - npm start
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+  
 
-### Analyzing the Bundle Size
+  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+     
+     
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
