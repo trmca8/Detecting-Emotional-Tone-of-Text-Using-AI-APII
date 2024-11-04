@@ -17,16 +17,10 @@ Getting Started
 
 Installation
 
-  1. Clone the repository:
-     
-    - git clone https://github.com/trmca8/Detecting-Emotional-Tone-of-Text-Using-AI-API.git
-     
-    - cd emotional-tone-detector
-
-  2. Install the dependencies:
+  1. Install the dependencies:
      - npm install axios
 
-  3. Set up the environment variable:
+  2. Set up the environment variable:
 
      3.1 Get Your Sapling API Key: Sign up on Sapling AI's website and get your API key for the tone detection API.
 
@@ -62,8 +56,7 @@ Dependencies:
 
 Bash Commands Recap:
   # Clone repository
-    - git clone https://github.com/trmca8/Detecting-Emotional-Tone-of-Text-Using-AI-API.git
-    - cd emotional-tone-detector
+    - git clone https://github.com/trmca8/Detecting-Emotional-Tone-of-Text-Using-AI-APII.git
 
   # Install dependencies
     - npm install axios
